@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--
+    Copyright 2011, Deft Labs.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -->
+    <title>Mongo Live</title>
+    <link href="/themes/dark.css" rel="stylesheet" type="text/css" media="screen" />
+    <style type="text/css">
+        .metricChart{
+            width: 45%;
+            float: left;
+        }
+        .metrics{
+            clear: both;
+        }
+        .metricChart.left .chartName{
+            float: left;
+        }
+        .metricChart.right .chartName{
+            float: right;
+        }
+    </style>
+</head>
+<body> 
+    <div id="header">
+        <div id="headerContent">
+            <div id="logo"></div>
+        </div>
+    </div>
+    <a href="javascript:window.server.startPolling();">Start</a><a href="javascript:window.server.stopPolling();">Stop</a>
+
+    <div id="mainContainer"></div>
+
+    <div id="footer">
+        <span>Mongo Live is not associated with <a href="http://www.mongodb.org/" target="_blank">MongoDB</a>.</span>
+        <span>Released under <a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License, Version 2.0</a>.</span> 
+        <span>&#169; 2011 <a href="http://deftlabs.com">Deft Labs</a></span>
+    </div>
+
+    <script type="text/template" id="server-template">
+        <!--
+        <div class="serverName">
+            <a href="http://<%= host %>:<%= port %>/" target="_blank">
+                <%= name %>
+            </a>
+        </div>
+        -->
+        <div class="metrics"></div>
+    </script>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="/js/smoothie.js"></script>
+    <script type="text/javascript" src="underscore.js"></script>
+
+    <script type="text/javascript" src="backbone.js"></script>
+    <script type="text/javascript" src="mongolive.js"></script>
+</body>
+</html>
