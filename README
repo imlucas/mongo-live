@@ -2,7 +2,11 @@
 About
 =======================================
 
-Mongo Live is a simple real-time monitoring tool for MongoDB.
+Mongo Live is a Chrome extension for real-time monitoring of MongoDB.
+
+You can install the extension from the Chrome Web Store:
+    
+    * https://chrome.google.com/webstore/detail/apgglicbkgjcfnohdcgbcobengnkcjef
 
 Thie product is not affiliated with MongoDB.
 
@@ -10,9 +14,11 @@ This product uses/includes the following open source projects:
 
     * Smoothie Charts - http://smoothiecharts.org/ - MIT License - Copyright (c) 2010, Joe Walnes
 
-    * jQuery - http://jquery.org - MIT License or GPL V2.
+    * jQuery - http://jquery.org - MIT License or GPL v2
 
-    * Images are from MongoDB: Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) 
+    * DataTables - http://www.datatables.net/ - GPL v2 - Copyright (c) 2007-2011, Allan Jardine 
+
+    * Images are from MongoDB http://www.mongodb.org - Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) 
 
 Thanks to the members of 10gen who provided feedback/suggestions.
 
